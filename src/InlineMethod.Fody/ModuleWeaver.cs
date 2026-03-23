@@ -31,7 +31,7 @@ public class ModuleWeaver : BaseModuleWeaver
                 }
                 catch (Exception)
                 {
-                    WriteMessage("Error occured when weaving call instruction: \n" +
+                    WriteMessage("Error occured when process call instruction: \n" +
                         $"\tCaller: {method.FullName} (IL offset: 0x{instruction.Offset:X8})\n" +
                         $"\tCallee: {calledMethod.FullName}", MessageImportance.High);
                     throw;
